@@ -3,7 +3,7 @@ body{
     image-rendering: pixelated;
     background-color:#0f122c;
     background-image:url(../images/background.png);
-    background-size: 100%;
+    background-size: cover;
     background-attachment:fixed;
 }
 
@@ -21,6 +21,9 @@ body{
 h1{
     line-height:0.25em;
     font-weight:bolder;
+}
+h2 h3{
+    line-height:0.25em;
 }
 
 a:link { color: #184fa8; } 
