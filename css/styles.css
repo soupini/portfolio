@@ -30,6 +30,8 @@ body{
 }
 .divider{
     background-color:#40187a80;
+
+    text-align:center;
 }
 
 h1{
@@ -55,26 +57,24 @@ a:active { color: #411b46;}
     font-size:4em;
 }
 
-#chngimg{
-    grid-area:chngimg;
-}
-#chngtxt{
-    grid-area:chngtxt;
-}
+#divwork{ grid-area:divwork; }
+#divpers{ grid-area:divpers; }
+#divcoll{ grid-area:divcoll; }
 
-#skelimg{
-    grid-area:skelimg;
-}
-#skeltxt{
-    grid-area:skeltxt;
-}
+#chngimg{ grid-area:chngimg; }
+#chngtxt{ grid-area:chngtxt; }
 
-#ffimg{
-    grid-area:ffimg;
-}
-#fftxt{
-    grid-area:fftxt;
-}
+#ashtxt{ grid-area:ashtxt; }
+#ashimg{ grid-area:ashimg; }
+
+#scrpimg{ grid-area:scrpimg; }
+#scrptxt{ grid-area:scrptxt; }
+
+#skelimg{ grid-area:skelimg; }
+#skeltxt{ grid-area:skeltxt; }
+
+#ffimg{ grid-area:ffimg; }
+#fftxt{ grid-area:fftxt; }
 
 #footer{
     display:flex;
@@ -86,13 +86,20 @@ a:active { color: #411b46;}
     text-align:center;
     font-size:1.25em;
     font-weight:bold;
+
+    background-color:#40187a80;
 }
 
 #wrapper{
     display:grid;
     grid-template-columns:40% auto 40%;
     grid-template-areas:"header  header  header"
+                        "divwork divwork divwork"
                         "chngtxt chngtxt chngimg"
+                        "divpers divpers divpers"
+                        "ashimg  ashtxt  ashtxt"
+                        "scrptxt scrptxt scrpimg"
+                        "divcoll divcoll divcoll"
                         "skelimg skeltxt skeltxt"
                         "fftxt   fftxt   ffimg"
                         "footer  footer  footer";
