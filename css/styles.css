@@ -83,6 +83,7 @@ a:active { color: #411b46;}
 
 #footer{
     display:flex;
+    flex-direction:column;
     justify-content: space-around;
     align-items: center;
 
@@ -114,9 +115,15 @@ a:active { color: #411b46;}
                         "fftxt"
                         "ffimg"
                         "footer";
+}
 
-    @media screen and (orientation:landscape) and (min-width: 1000px) /* desktop */
-    {
+@media screen and (orientation:landscape) and (min-width: 1000px) /* desktop */
+{
+    #footer{
+        flex-direction:row;
+    }
+
+    #wrapper{
         grid-template-columns:40% auto 40%;
         grid-template-areas:"header  header  header"
                             "divwork divwork divwork"
