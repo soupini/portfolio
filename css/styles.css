@@ -1,5 +1,7 @@
 body{
     font-family:sans-serif;
+    color: rgb(200, 200, 200);
+
     image-rendering: pixelated;
     background-color:#0f122c;
     background-image:url(../images/background.png);
@@ -37,9 +39,11 @@ body{
 h1{
     line-height:0.25em;
     font-weight:bolder;
+    color: white;
 }
 h2 h3{
     line-height:0.25em;
+    color:white;
 }
 
 a:link { color: #184fa8; } 
