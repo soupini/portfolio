@@ -28,6 +28,7 @@ body{
     align-items: center;
 }
 .itemimg img{
+    max-width: 500px;
     width:100%;
 }
 .divider{
@@ -96,19 +97,40 @@ a:active { color: #411b46;}
 
 #wrapper{
     display:grid;
-    grid-template-columns:40% auto 40%;
-    grid-template-areas:"header  header  header"
-                        "divwork divwork divwork"
-                        "chngtxt chngtxt chngimg"
-                        "divpers divpers divpers"
-                        "ashimg  ashtxt  ashtxt"
-                        "scrptxt scrptxt scrpimg"
-                        "divcoll divcoll divcoll"
-                        "skelimg skeltxt skeltxt"
-                        "fftxt   fftxt   ffimg"
-                        "footer  footer  footer";
-    max-width: 1200px;
-    margin:auto;
+
+    /* mobile */
+    grid-template-areas:"header"
+                        "divwork"
+                        "chngtxt"
+                        "chngimg"
+                        "divpers"
+                        "ashtxt"
+                        "ashimg"
+                        "scrptxt"
+                        "scrpimg"
+                        "divcoll"
+                        "skeltxt"
+                        "skelimg"
+                        "fftxt"
+                        "ffimg"
+                        "footer";
+
+    @media only screen and (min-width: 1000px) /* desktop */
+    {
+        grid-template-columns:40% auto 40%;
+        grid-template-areas:"header  header  header"
+                            "divwork divwork divwork"
+                            "chngtxt chngtxt chngimg"
+                            "divpers divpers divpers"
+                            "ashimg  ashtxt  ashtxt"
+                            "scrptxt scrptxt scrpimg"
+                            "divcoll divcoll divcoll"
+                            "skelimg skeltxt skeltxt"
+                            "fftxt   fftxt   ffimg"
+                            "footer  footer  footer";
+        max-width: 1200px;
+        margin:auto;
+    }
 }
 
 a:link{
