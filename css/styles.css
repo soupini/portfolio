@@ -13,7 +13,7 @@ body{
     margin:0.25em;
     padding:0.5em;
 }
-.item, .itemimg, .divider{
+.item, .itemimg, .divider, .idxitem{
     margin:1em;
     padding:0.75em 1em 1em;
 
@@ -36,6 +36,19 @@ body{
 
     text-align:center;
 }
+.idxitem{
+    font-family:"Archivo";
+    font-weight:bold;
+    font-size:1.25em;
+    text-align:center;
+
+    width:100%;
+}
+.idxitem a:link { color: #de95d2; } 
+.idxitem a:visited { color: #de95d2; } 
+.idxitem a:focus { color: #ffffff;} 
+.idxitem a:hover { color: #ffffff;} 
+.idxitem a:active { color: #964b89;}
 
 h1{
     font-family: "Archivo Black", sans-serif;
@@ -58,12 +71,6 @@ h2 h3{
     color:#968ba5;
 }
 
-a:link { color: #184fa8; } 
-a:visited { color: #1c293d; } 
-a:focus { color: #214072;} 
-a:hover { color: #214072;} 
-a:active { color: #411b46;}
-
 #header{
     grid-area:header;
     text-align:center;
@@ -71,6 +78,15 @@ a:active { color: #411b46;}
 }
 #header h1{
     font-size:4em;
+}
+
+#index{ 
+    grid-area:index; 
+
+    display:flex;
+    justify-content: space-around;
+    justify-items:stretch;
+    align-items: center;
 }
 
 #divwork{ grid-area:divwork; }
@@ -112,6 +128,7 @@ a:active { color: #411b46;}
 
     /* mobile */
     grid-template-areas:"header"
+                        "index"
                         "divwork"
                         "chngtxt"
                         "chngimg"
@@ -137,6 +154,7 @@ a:active { color: #411b46;}
     #wrapper{
         grid-template-columns:40% auto 40%;
         grid-template-areas:"header  header  header"
+                            "index   index   index"
                             "divwork divwork divwork"
                             "chngtxt chngtxt chngimg"
                             "divpers divpers divpers"
@@ -151,18 +169,7 @@ a:active { color: #411b46;}
     }
 }
 
-a:link{
-    color:#ff1038;
-}
-
-a:visited {
-    color: #a50808;
-}
-
-a:hover {
-    color: #ff5252;
-}
-
-a:active {
-    color: #ff9999;
-} 
+a:link{color:#ff1038;}
+a:visited {color: #a50808;}
+a:hover {color: #ff5252;}
+a:active {color: #ff9999;}
