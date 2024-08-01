@@ -38,16 +38,22 @@ body{
 }
 
 h1{
+    font-family: "Archivo Black", sans-serif;
+
     line-height:0.25em;
     font-weight:bolder;
     color: white;
 }
 h2 h3{
+    font-family: "Archivo", sans-serif;
+    
     line-height:0.25em;
     color:white;
 }
 
 .date{
+    font-family: "Archivo", sans-serif;
+
     font-size:0.6em;
     color:#968ba5;
 }
