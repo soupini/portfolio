@@ -47,6 +47,11 @@ h2 h3{
     color:white;
 }
 
+.date{
+    font-size:0.6em;
+    color:#968ba5;
+}
+
 a:link { color: #184fa8; } 
 a:visited { color: #1c293d; } 
 a:focus { color: #214072;} 
