@@ -115,7 +115,7 @@ a:active { color: #411b46;}
                         "ffimg"
                         "footer";
 
-    @media screen and (min-width: 1000px) /* desktop */
+    @media screen and (orientation:landscape) and (min-width: 1000px) /* desktop */
     {
         grid-template-columns:40% auto 40%;
         grid-template-areas:"header  header  header"
